@@ -44,8 +44,9 @@ and its autoload is already running, so there is nothing to wire.
 
 Each Lite is the free cut of a paid system. The full versions of every system
 in this project ship together as **SELODEV Complete** on
-https://selodev.com/go/complete. They drop into the same folders and speak the same
-event bus, so your game keeps working.
+https://selodev.com/go/complete. They install next to the Lites without breaking
+anything. This project's scripts in `chassis/` and `game/` talk to the Lites, so
+moving onto a full version means updating those scripts.
 
 ## 7. Publish it
 
