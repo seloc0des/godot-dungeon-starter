@@ -7,7 +7,7 @@ extends Control
 # never duplicates), or tune the node in the Inspector.
 #
 # A shop comes with a plain ShopPanel that opens when the player walks into the
-# shop's area, and links to the player's wallet and bag on Play. Pro's shop is the
+# shop's area, and links to the player's wallet and bag on Play. The full version's shop is the
 # styled one (icons, tabs, buyback, several currencies). The note says so.
 
 const VENDOR_SCRIPT := "res://addons/vendor_lite/vendor_lite.gd"
@@ -138,7 +138,7 @@ func _ready() -> void:
 
 	root.add_child(HSeparator.new())
 	var note := Label.new()
-	note.text = "It's your game. Re-pick and Apply any time (it updates in place), or tweak the shop's stock and prices here or in the Inspector. Pro adds a styled shop with icons and Buy/Sell tabs, buyback, several currencies, restock timers and timed offers."
+	note.text = "It's your game. Re-pick and Apply any time (it updates in place), or tweak the shop's stock and prices here or in the Inspector. The full version adds a styled shop with icons and Buy/Sell tabs, buyback, several currencies, restock timers and timed offers."
 	note.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	note.modulate = Color(0.72, 0.75, 0.82)
 	root.add_child(note)
@@ -245,7 +245,7 @@ func tag_player(root: Node, target: Node) -> bool:
 
 # Same-scene convenience: drop both and point the vendor's own wallet_path at the
 # wallet sibling. This is a component pointing at its own currency source in the
-# same scene — not cross-system UI/trigger wiring (that's Pro).
+# same scene, not cross-system UI/trigger wiring (that's the full version).
 func wire_shop_and_wallet(root: Node, target: Node, starting: int) -> Node:
 	var wallet := wire_wallet(root, target, starting)
 	var vendor := _ensure(target, root, "VendorLite", VENDOR_SCRIPT)

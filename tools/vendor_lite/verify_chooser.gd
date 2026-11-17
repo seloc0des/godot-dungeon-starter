@@ -241,7 +241,7 @@ func _dock_ui_checks() -> void:
 	_assert(mk != null and mk.tooltip_text == "Touch triggers, doors, zones and enemies only react to the node in the \"player\" group.",
 		"the Setup tab has the Make the selected node the player button, with its tooltip")
 	_assert(not text.contains("drop-in ShopUI") and not text.contains("open-on-interact") and text.contains("styled shop"),
-		"the Pro note says what Pro adds and no longer says Lite has no shop window")
+		"the full note says what the full version adds and no longer says Lite has no shop window")
 	d.queue_free()
 
 

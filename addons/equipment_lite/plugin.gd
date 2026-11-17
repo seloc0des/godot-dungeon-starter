@@ -2,7 +2,7 @@
 extends EditorPlugin
 
 # Ships the "add equipment" chooser (leftmost) + the compact no-code authoring
-# dock. The Pro tier adds full fields + one-click wiring.
+# dock. The full version adds full fields + one-click wiring.
 
 const CHOOSER_SCRIPT := preload("res://addons/equipment_lite/editor/equipment_chooser_dock.gd")
 const DOCK_SCRIPT := preload("res://addons/equipment_lite/editor/lite_dock.gd")

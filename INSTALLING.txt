@@ -60,7 +60,7 @@ path. They carry on working.
 
 Two exceptions, so check before you copy:
 
-- The Pro Save/Load pack keeps its settings inside its own folder. Move
+- The full Save/Load pack keeps its settings inside its own folder. Move
   "addons/save_load/default_settings.tres", and anything you saved next to it,
   out of the way first, then put them back. The Lite pack has nothing to move.
 - Anything else you saved or edited inside "addons/<pack>" yourself. Same deal.

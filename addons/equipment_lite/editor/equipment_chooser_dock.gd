@@ -9,14 +9,14 @@ extends Control
 #
 # Lite tier: slots on the player with a plain list of what's on (key C), and
 # pickups that equip themselves. The paper doll, stat bonuses and custom slot
-# layouts are Pro, shown as an honest note, not a nag.
+# layouts are the full version, shown as an honest note, not a nag.
 
 const COMPONENT_SCRIPT := "res://addons/equipment_lite/equipment_lite.gd"
 const PICKUP_SCRIPT := "res://addons/equipment_lite/equip_pickup_lite.gd"
 const LIST_SCRIPT := "res://addons/equipment_lite/equipped_list_lite.gd"
 const ITEM_SCRIPT := "res://addons/equipment_lite/item_resource.gd"
 # With an Inventory pack in the project, New item makes that pack's item, so the
-# same sword can sit in the bag and be worn. Pro first, then Lite.
+# same sword can sit in the bag and be worn. The full version first, then Lite.
 const INVENTORY_ITEM_SCRIPTS := [
 	"res://addons/inventory/resources/item_resource.gd",
 	"res://addons/inventory_lite/item_resource.gd",
@@ -143,7 +143,7 @@ func _ready() -> void:
 
 	root.add_child(HSeparator.new())
 	var pro := Label.new()
-	pro.text = "🔒 Pro adds a styled paper doll with slot icons and drag and drop from the bag, stat bonuses from gear, your own slot layouts, two-handed weapons, and wiring to the Inventory, Stats and Save packs."
+	pro.text = "🔒 The full version adds a styled paper doll with slot icons and drag and drop from the bag, stat bonuses from gear, your own slot layouts, two-handed weapons, and wiring to the Inventory, Stats and Save packs."
 	pro.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	pro.modulate = Color(0.85, 0.8, 0.55)
 	root.add_child(pro)

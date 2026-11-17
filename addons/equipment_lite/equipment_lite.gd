@@ -7,9 +7,9 @@ extends Node
 #
 # Items must declare their target slot via `metadata.equip_slot`. The Lite
 # tier doesn't enforce categories — any item can go in any matching-name
-# slot; if you need stricter rules, that lives in the Pro tier.
+# slot; if you need stricter rules, that lives in the full version.
 #
-# Cut from Pro:
+# Not in the Lite:
 #   * Customizable EquipmentLayout (any slot ids, categories per slot)
 #   * Two-handed conflicts
 #   * Modifier aggregation (`get_modifier_sum`, `apply_modifiers`)

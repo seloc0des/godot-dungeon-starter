@@ -3,7 +3,7 @@ extends PanelContainer
 
 # What the player has on, as plain text: one "<slot>: <item>" line per slot. It
 # finds the equipment itself (on the node in the "player" group) and follows its
-# changes. Starts hidden; the toggle action shows and hides it. Pro's paper doll
+# changes. Starts hidden; the toggle action shows and hides it. The full version's paper doll
 # is the styled one: slot icons, drag and drop and stat bonuses.
 
 ## Input action that shows and hides the list. The Setup tab registers "character" on C.

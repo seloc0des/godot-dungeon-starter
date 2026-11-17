@@ -6,7 +6,7 @@ extends Node
 # unlimited). Buy and sell are symmetric — sell price defaults to `price`
 # unless `sell_price` is set explicitly per entry.
 #
-# Cut from Pro:
+# Not in the Lite:
 #   * Multi-currency wallets
 #   * Buyback ratio (separate buy and sell prices automatically)
 #   * Restock timers (`restock_seconds`)

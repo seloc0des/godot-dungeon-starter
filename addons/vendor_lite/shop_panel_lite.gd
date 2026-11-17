@@ -6,7 +6,7 @@ extends Control
 # tab points area_path at the shop's ShopArea, so it opens when the player walks
 # in and closes when they walk out (or press Close). It takes payment from the
 # player's WalletLite and fills the player's bag, found by the "player" group.
-# Vendor (Pro) has the styled ShopUI: icons, Buy/Sell tabs, several currencies.
+# The full Vendor has the styled ShopUI: icons, Buy/Sell tabs, several currencies.
 
 ## The VendorLite this window sells from. The Setup tab fills it in.
 @export_node_path("Node") var vendor_path: NodePath
@@ -308,7 +308,7 @@ func _unplaced() -> bool:
 		and offset_left == 0.0 and offset_top == 0.0 and offset_right == 0.0 and offset_bottom == 0.0
 
 
-# Lower middle, same spot as Pro's shop: the corners belong to the bag, the
+# Lower middle, same spot as the full version's shop: the corners belong to the bag, the
 # paper doll and the quest log, and crafting sits top centre.
 func _place() -> void:
 	set_anchors_preset(Control.PRESET_CENTER_BOTTOM)
